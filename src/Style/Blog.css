@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-title {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(25px, 4.5vw, 50px);
+    font-weight: 400;
+    padding-bottom: 5px;
+    margin-top: clamp(30px,10rem,75px);
+}
+
+.blog-border {
+    width: 100px;
+    border-bottom: 2px solid #FF7757;
+}
+
+.blog-p {
+    color: #767E86;
+    padding-top: 15px;
+    font-size: clamp(16px, 1.25vw, 24px);
+}
+
+.blog-content {
+    margin-top: clamp(20px, 2.6vw, 50px);
+}
+
+.blog-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Blogimg {
+    height: clamp(550px, 36.5vw, 700px);
+    width: 85%;
+    border-radius: 20px;
+}
+
+@media (max-width:768px) {
+    .Blogimg {
+        border-radius: 10px;
+    }
+}
+
+
+.blog-subtitle {
+    margin-top: clamp(35px, 10rem, 90px);
+}
+
+.blog-subtitleh1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(25px, 4.5vw, 35px);
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.blog-subp {
+
+    color: #172432;
+    line-height: 30px;
+    word-spacing: 7px;
+    font-size: clamp(10px, 3rem, 18px);
+}
+
+.btn-blog,
+.btn-blogp {
+    color: #FF7757;
+}
+
+.btn-blog {
+    display: flex;
+    gap: 5px;
+    margin-top: clamp(15px, 5rem, 25px);
+    cursor: pointer;
+
+    border-radius: 20px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+.arrow {
+    padding-top: 5px;
+}

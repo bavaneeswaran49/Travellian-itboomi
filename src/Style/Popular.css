@@ -1,0 +1,44 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
+
+  * {
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .popular {
+      /* margin-top: 1475px; */
+  }
+@media (max-width:1920px) {
+    .popular{
+        margin-top: 850px!important;
+    }
+}
+  .pop-img1 {
+      height: 375px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+
+  .popular-img {
+      margin-top: clamp(30px, 10rem, 50px);
+  }
+
+  .popular-p {
+      transform: translate(10px, -60px);
+      font-family: "Playfair Display", serif;
+
+  }
+
+  .popular-df {
+      display: flex;
+      transform: translate(10px, -50px);
+  }
+
+  .picon {
+      color: white;
+      font-size: clamp(10px,3rem,15px);
+  }
+  .popular-para{
+    transform: translate(5px,-3px);
+  }

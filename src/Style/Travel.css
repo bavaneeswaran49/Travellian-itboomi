@@ -1,0 +1,49 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200..1000&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+  .slider-btn-df {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: clamp(20px, 5rem, 50px);
+  }
+
+  .travel-container {
+    margin-top: clamp(20px, 5rem, 60px);
+  }
+
+  .travel-col {
+    background-color: #F5F6F7;
+    border-radius: 10px;
+    padding: 0px 20px !important;
+    padding-bottom: 15px !important;
+    margin-top: clamp(50px , 10rem , 0px);
+    width: 99%;
+  }
+
+  .travelmain-p {
+    color: #767E86;
+    font-size: clamp(10px, 5rem, 16px);
+    padding-bottom: 5px !important;
+  }
+
+  .travelh4 {
+    font-family: "Playfair Display", serif;
+    color: #767E86;
+    font-size: clamp(15px, 2rem, 20px);
+    font-weight: 400;
+  }
+
+  .travel-p {
+    color: #767E86;
+    font-size: clamp(10px, 5rem, 16px);
+  }
+
+  .timg1 {
+    height: 70px;
+    width: 70px;
+    border-radius: 80px;
+    transform: translateY(-40px);
+  }

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.trip-h1 {
+    font-family: "Playfair Display", serif;
+    color: #172432;
+    font-weight: 400;
+    font-size: clamp(25px, 4.5vw, 45px);
+    margin-top: clamp(20px, 5rem, 75px);
+    padding-bottom: clamp(10px, 5rem, 20px);
+}
+
+.trip-border {
+    border-bottom: 3px solid #FF7757;
+    width: 60%;
+    font-size: clamp(10px, 3rem, 20px);
+
+}
+
+.trip-p {
+    color: #767E86;
+    padding-top: clamp(7px, 5rem, 15px);
+}
+
+.box1 {
+    height: clamp(20px, 10rem, 40px);
+    width: clamp(20px, 10rem, 40px);
+    background-color: #172432;
+}
+
+.box2 {
+    background-color: #FF7757;
+    width: 200px;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: clamp(25px, 5rem, 50px);
+    transform: translate(15px, -25px);
+
+}
+
+.box2-p {
+    color: aliceblue;
+}
+
+.box3 {
+    height: clamp(20px, 10rem, 40px);
+    width: clamp(20px, 10rem, 40px);
+    background-color: #767E86;
+    transform: translate(190px, -45px);
+}
+
+.box {
+    margin-top: clamp(10px, 5rem, 20px);
+}
+
+.tipimg1 {
+    height: clamp(100px, 30rem, 375px);
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    margin-top: clamp(20px, 5rem, 60px);
+}
+
+.trip-para {
+    color: black;
+}
+
+.tripp {
+    margin-top: clamp(30px, 19rem, 80px);
+}
+
+.trip-df {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-df1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-df-p {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.trip-df1 {
+    transform: translateY(-80px);
+    /* visibility: hidden; */
+}
+
+.tipimg1 {
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.tipimg1:hover {
+    transform: translateY(-55px);
+}
+.trip-h3{
+     font-family: "Playfair Display", serif;
+     font-weight: 600;
+     font-size: clamp(13px , 2rem , 20px);
+}
+.tstar{
+    color: #FFC107;
+}
+.tstarmain{
+    display: flex;
+    gap: 10px;
+    padding-bottom: clamb(5px,1rem,10px);
+}

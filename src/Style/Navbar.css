@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    height: clamp(60px, 5.2vw, 100px);
+    position: relative;
+    z-index: 1000;
+    position: fixed;
+
+}
+
+.navLogo {
+    height: clamp(32px, 2.35vw, 45px);
+    width: clamp(160px, 12.2vw, 234px);
+    cursor: pointer;
+}
+
+.nav-link,
+.navbar-nav {
+    color: white;
+}
+
+button.navbar-toggler {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button.navbar-toggler:focus,
+button.navbar-toggler:active,
+button.navbar-toggler:focus-visible {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    font-size: clamp(18px, 1.46vw, 28px);
+    display: flex;
+    justify-content: center;
+
+}
+
+.signin-login {
+    display: flex;
+    gap: 30px;
+}
+
+.signin {
+    background-color: #FF7757;
+    padding: clamp(10px, 0.83vw, 13px) clamp(16px, 1.67vw, 32px);
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.login {
+    padding-top: clamp(8px, 0.83vw, 13px);
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 0px !important;
+}
+
+.btn-close {
+    justify-content: end;
+}
+
+.nav-item {
+    padding-top: 3px;
+}
+
+p {
+    color: white;
+}
+
+.navbar {
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.navbar-black {
+    background-color: black;
+}
+
+@media(max-width:768px) {
+    p {
+        color: black;
+    }
+}
