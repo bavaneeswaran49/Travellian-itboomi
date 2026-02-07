@@ -113,7 +113,7 @@ export default function Navbar() {
 //           <img src={menu} alt="menu" />
 //         </button>
 
-//         {/* OFFCANVAS MENU */}
+//      
 //         <div
 //           className="offcanvas offcanvas-end"
 //           id="navbarOffcanvas"
