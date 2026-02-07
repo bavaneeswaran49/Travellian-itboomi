@@ -6,7 +6,8 @@ import img3 from '../assets/tripimg3.jpg'
 export default function Trip() {
     return (
         <>
-            <div className='container tripp '>
+        <div  id='trip'>
+            <div className='container tripp'>
                 <div className='row'>
                     <div className=' col-lg-3'>
                         <h1 className='trip-h1'>Trip Planners</h1>
@@ -75,7 +76,7 @@ export default function Trip() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></div>
         </>
     )
 }

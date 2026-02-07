@@ -3,13 +3,19 @@
   @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+  .destination-heading{
+    padding-top: clamp(20px,6rem,50px);
+  }
   .slider-btn-df {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: clamp(20px, 5rem, 50px);
   }
-
+.destinetion-border{
+  border: 2px solid #FF7757;
+  width: 20%;
+}
   .travel-container {
     margin-top: clamp(20px, 5rem, 60px);
   }
@@ -47,3 +53,68 @@
     border-radius: 80px;
     transform: translateY(-40px);
   }
+.travel-slider {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.travel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.travel-slide {
+  flex: 0 0 calc(100% / 3);
+  padding: 10px;
+}
+
+
+@media (max-width: 991px) {
+  .travel-slide {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .travel-slide {
+    flex: 0 0 100%;
+  }
+}
+.travel-slider {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.travel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.travel-slide {
+  flex: 0 0 calc(100% / 3);
+  padding: 10px;
+}
+
+
+@media (max-width: 991px) {
+  .travel-slide {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .travel-slide {
+    flex: 0 0 100%;
+  }
+}
+
+.slider-btn-df {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+

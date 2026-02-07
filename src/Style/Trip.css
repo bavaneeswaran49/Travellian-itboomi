@@ -5,7 +5,7 @@
     color: #172432;
     font-weight: 400;
     font-size: clamp(25px, 4.5vw, 45px);
-    margin-top: clamp(20px, 5rem, 75px);
+    /* padding-top: clamp(0px, 4rem, 60px)!important; */
     padding-bottom: clamp(10px, 5rem, 20px);
 }
 
@@ -96,9 +96,42 @@
     transition-timing-function: ease-in-out;
 }
 
-.tipimg1:hover {
+/* .tipimg1:hover {
     transform: translateY(-55px);
 }
+.trip-df,.trip-df1{
+    visibility: hidden;
+}
+.trip-df:hover,.trip-df1:hover{
+    visibility: visible;
+} */
+ .tripimg {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.tripimg:hover .tipimg1 {
+    transform: translateY(-55px);
+    cursor: pointer;
+}
+
+
+.trip-df,
+.trip-df1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+
+.tripimg:hover .trip-df,
+.tripimg:hover .trip-df1 {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
 .trip-h3{
      font-family: "Playfair Display", serif;
      font-weight: 600;
@@ -111,4 +144,7 @@
     display: flex;
     gap: 10px;
     padding-bottom: clamb(5px,1rem,10px);
+}
+#trip{
+    padding-top: clamp(10px,5rem,50px)!important;
 }

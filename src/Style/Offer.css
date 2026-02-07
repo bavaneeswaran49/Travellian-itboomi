@@ -7,7 +7,9 @@
       display: flex;
       gap: 30px;
   }
-
+#travel{
+padding-top: clamp(30px,5rem,100px);
+}
   .left,
   .right {
       height: 35px;
@@ -41,7 +43,7 @@
   }
 
   .offer-container {
-      margin-top: clamp(30px,10rem,75px);
+      /* margin-top: clamp(30px,10rem,75px); */
   }
 
   .slider-heading {
@@ -144,6 +146,7 @@
     color: white;
     padding: 10px 15px;
     border-radius: 12px;
+    cursor: pointer;
   }
   .rate-details{
     padding-top: 10px;

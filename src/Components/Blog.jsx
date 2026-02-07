@@ -4,7 +4,7 @@ import Blogimg from '../assets/Blogimg.jpg'
 export default function Blog() {
     return (
         <>
-            <div className='container blog'>
+            <div className='container blog' id='blog'>
                 <h1 className='blog-title'>Our Blog</h1>
                 <div className='blog-border'></div>
                 <p className='blog-p'>An insight the incredible experience in the world</p>
@@ -12,7 +12,7 @@ export default function Blog() {
             <div className='container blog-content'>
                 <div className='row'>
                     <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12 blog-img'>
-                        <img src={Blogimg} className='Blogimg'></img>
+                        <img src={Blogimg} className='blogimg'></img>
                     </div>
                     <div className='col-xl-6 col-lg-6 col-md-6 col-sm-12'>
                         <div className='blog-subtitle'>

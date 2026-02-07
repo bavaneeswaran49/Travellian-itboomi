@@ -5,7 +5,7 @@ import carosil2 from '../assets/carosil2.png'
 export default function Herosec() {
   return (
     <>
-      <div className='herobgimg'>
+      <div className='herobgimg' id='hero'>
         <div className='container'>
           <div className='row'>
             <div className='col-xl-8 col-lg-8  col-md-8 col-sm-12'>
@@ -27,22 +27,36 @@ export default function Herosec() {
           <div className='info-main'>
             <div className='info'>
               <div className='info-details'>
-                <div className='d-flex gap-5'>
+                <div className='iinfo'>
                   <div className='details'>
                     <label>DESTINATION</label><br></br>
-                    <input placeholder='Dubai'></input>
+                   <input placeholder='Dubai' type='text'></input> 
                   </div>
                   <div className='details'>
                     <label>PERSON</label><br></br>
-                    <input placeholder='4' type='number'></input>
+                    <select name='0' id='numbers'>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
                   </div>
                   <div className='details'>
                     <label>CHECK IN</label><br></br>
-                    <input></input>
+                    <select name='0' id='numbers'>
+                      <option value="1">Sun,7th Feb 2026</option>
+                      <option value="2">Mon,8th Feb 2026</option>
+                      <option value="3">Three</option>
+                      <option value="4">Four</option>
+                    </select>
                   </div>
                   <div className='details'>
                     <label>CHECK OUT</label><br></br>
-                    <input></input>
+                     <select name='0' id='numbers'>
+                      <option value="1">Sun,9th Feb 2026</option>
+                      <option value="2">Mon,10th Feb 2026</option>
+                     
+                    </select>
                   </div>
                 </div>
               </div>

@@ -37,7 +37,7 @@ export default function Popular() {
 
     return (
         <>
-            <div className='container popular'>
+            <div className='container popular ' id='explore'>
                 <div className='destination-topic'>
                     <div>
                         <h1 className='destination-heading'>Popular Destinations</h1>

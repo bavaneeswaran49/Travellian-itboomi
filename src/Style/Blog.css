@@ -10,7 +10,7 @@
     font-size: clamp(25px, 4.5vw, 50px);
     font-weight: 400;
     padding-bottom: 5px;
-    margin-top: clamp(30px,10rem,75px);
+    /* margin-top: clamp(30px,10rem,px); */
 }
 
 .blog-border {
@@ -34,9 +34,9 @@
     align-items: center;
 }
 
-.Blogimg {
+.blogimg {
     height: clamp(550px, 36.5vw, 700px);
-    width: 85%;
+    width: 85%!important;
     border-radius: 20px;
 }
 
@@ -86,4 +86,13 @@
 
 .arrow {
     padding-top: 5px;
+}
+@media(max-width:426px){
+    .blogimg{
+        height: 350px;
+        width: 90%;
+    }
+}
+#blog{
+    padding-top: clamp(40px,6rem,130px);
 }

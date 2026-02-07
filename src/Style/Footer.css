@@ -117,7 +117,12 @@ textarea::placeholder {
     color: white;
     padding-top: 10px;
 }
-
+.footer-p{
+    text-decoration: none;
+}
+.foota{
+    text-decoration: none;
+}
 @media (max-width:768px) {
     .leter-sub {
         transform: translate(0px, 0px);

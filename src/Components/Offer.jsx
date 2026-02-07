@@ -45,7 +45,7 @@ export default function Offer() {
 
   return (
     <>
-      <div className='offer-container container'>
+      <div className='offer-container container' id='travel'>
         <div className='offer'>
           <div className='slider-btns'>
             <div className='left' onClick={prevSlide}>

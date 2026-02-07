@@ -34,11 +34,11 @@ export default function Footer() {
                         </div>
                         <div className='col-lg-2 footer-sub'>
                             <p className='footer-title'>Menu</p>
-                            <p className='footer-p'>Home</p>
-                            <p className='footer-p'>Explore</p>
-                            <p className='footer-p'>Travel</p>
-                            <p className='footer-p'>Blog</p>
-                            <p className='footer-p'>Pricing</p>
+                            <a href='#hero'className='foota'><p className='footer-p'>Home</p></a>
+                            <a href='#explore'className='foota'><p className='footer-p'>Explore</p></a>
+                            <a href='#travel'className='foota'><p className='footer-p'>Travel</p></a>
+                            <a href='#blog'className='foota'><p className='footer-p'>Blog</p></a>
+                            <a href='#trip'className='foota'><p className='footer-p'>Pricing</p></a>
                         </div>
                         <div className='col-lg-2 footer-sub'>
                             <p className='footer-title'>Information </p>

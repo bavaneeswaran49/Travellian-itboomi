@@ -9,56 +9,75 @@ import img4 from '../assets/dgallary4.jpg'
 
 export default function Destination() {
 
-    const images = [img1, img2, img3, img4,
-        img4, img3, img2, img1]
-    const itemsPerPage = 4
+  const images = [img1, img2, img3, img4, img4, img3, img2, img1]
 
-    const [page, setPage] = useState(0)
+  const [index, setIndex] = useState(0)
+  const [itemsPerView, setItemsPerView] = useState(4)
 
-    const maxPage = Math.ceil(images.length / itemsPerPage) - 1
-
-    const nextSlide = () => {
-        if (page < maxPage) setPage(page + 1)
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setItemsPerView(1)
+      } else if (window.innerWidth < 1024) {
+        setItemsPerView(2)
+      } else {
+        setItemsPerView(4)
+      }
+      setIndex(0) 
     }
 
-    const prevSlide = () => {
-        if (page > 0) setPage(page - 1)
-    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
-    const visibleImages = images.slice(
-        page * itemsPerPage,
-        page * itemsPerPage + itemsPerPage
-    )
+  const maxIndex = images.length - itemsPerView
 
-    return (
-        <>
-            <div className='container'>
-                <div className='destination-topic'>
-                    <div>
-                        <h1 className='destination-heading'>Destination Gallery</h1>
-                        <div className='destination-border'></div>
-                        <p className='destination-p'>Our photo gallery on trip</p>
-                    </div>
+  const nextSlide = () => {
+    if (index < maxIndex) setIndex(index + 1)
+  }
 
-                    <div className='slider-btns'>
-                        <div className='left' onClick={prevSlide}>
-                            <img src={left} className='leftimg' />
-                        </div>
-                        <div className='right' onClick={nextSlide}>
-                            <img src={right} className='rightimg' />
-                        </div>
-                    </div>
-                </div>
-                <div className="slider-wrapper">
-                    <div className="gslider">
-                        {visibleImages.map((img, i) => (
-                            <div className='gallary' key={i}>
-                                <img src={img} className='gimg1' />
-                            </div>
-                        ))}
-                    </div>
-                </div>
+  const prevSlide = () => {
+    if (index > 0) setIndex(index - 1)
+  }
+
+  return (
+    <div className='container'>
+      <div className='destination-topic'>
+        <div>
+          <h1 className='destination-heading'>Destination Gallery</h1>
+          <div className='destination-border'></div>
+          <p className='destination-p'>Our photo gallery on trip</p>
+        </div>
+
+        <div className='slider-btns'>
+          <div className='left' onClick={prevSlide}>
+            <img src={left} className='leftimg' />
+          </div>
+          <div className='right' onClick={nextSlide}>
+            <img src={right} className='rightimg' />
+          </div>
+        </div>
+      </div>
+
+      <div className="slider-wrapper">
+        <div
+          className="gslider"
+          style={{
+            transform: `translateX(-${index * (100 / itemsPerView)}%)`
+          }}
+        >
+          {images.map((img, i) => (
+            <div
+              className='gallary'
+              key={i}
+              style={{ minWidth: `${100 / itemsPerView}%` }}
+            >
+              <img src={img} className='gimg1' />
             </div>
-        </>
-    )
+          ))}
+        </div>
+      </div>
+    </div>
+  )
 }
